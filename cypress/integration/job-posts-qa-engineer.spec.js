@@ -14,7 +14,6 @@ describe("Job Posts Tests", () => {
         //Act 
         cy.contains('Careers').click()
         //Assert
-        //cy.contains('Sr. QA Engineer')
         cy.get('.job-listing').contains('Sr. QA Engineer').should('be.visible').siblings('a').invoke('attr', 'href')
         .then(href => {
           cy.log(href);

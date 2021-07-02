@@ -28,3 +28,5 @@ To run this locally follow these steps.
 This will open up the test runner window a let you see the test executing. 
 
 The repo is setup to automatically run the test once a day and create a report at (https://techsavagery.github.io/dave-com-tests/index.html) with a video of the run and the link for the Sr. QA Engineer job post that was found.
+
+[Video Walk Through](https://drive.google.com/file/d/1w53bSLeq7yIBB723sK2utAM3sNecbu2A/view?usp=sharing)
