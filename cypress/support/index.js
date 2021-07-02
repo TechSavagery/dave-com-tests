@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import addContext from 'mochawesome/addContext'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
@@ -26,3 +27,7 @@ Cypress.on("test:after:run", (test, runnable) => {
 
     addContext({ test }, videoUrl)
 });
+
+Cypress.Commands.add('addContext', (context) => {
+    cy.once('test:after:run', (test) => addContext({ test }, context));
+  });
