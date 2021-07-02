@@ -18,6 +18,7 @@ describe("Job Posts Tests", () => {
         cy.get('.job-listing').contains('Sr. QA Engineer').should('be.visible').siblings('a').invoke('attr', 'href')
         .then(href => {
           cy.log(href);
+          cy.addContext(href)
         });
     });
   });
